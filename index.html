@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LEGO® Advent Calendar Mystery Box</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="#" class="logo" aria-label="Home">REVIEWER</a>
+      <nav aria-label="Primary navigation"></nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="site-main">
+    
+    <section id="hero" class="hero container">
+      <h3>LEGO® Advent Calendar Mystery Box</h3>
+      <figure class="hero-figure">
+        <img src="assets/s1.jpg" alt="People completing a survey on a laptop" width="100" height="100" loading="eager" />
+        <figcaption class="visually-hidden">Image illustrating taking a survey</figcaption>
+      </figure>
+      <p>
+        Your experience with the LEGO® Advent Calendar Mystery Box is very important! Your answers will help improve the quality of future products. 
+        </br>This survey will only take a few minutes of your time!
+      </p>
+      <button id="start-btn" class="btn btn-primary" type="button">Start Survey</button>
+    </section>
+    
+
+    <section id="quiz" class="quiz container" hidden aria-live="polite">
+      <header class="quiz-header">
+        <p id="progress" class="quiz-progress" aria-live="polite"></p>
+      </header>
+      <form id="quiz-form" class="quiz-form" novalidate>
+        <fieldset>
+          <legend id="question-text"></legend>
+          <div id="options" class="options"></div>
+        </fieldset>
+        <div class="actions">
+          <button id="next-btn" class="btn btn-primary" type="submit">Next</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="thankyou" class="thankyou container" hidden>
+      <h2>Thank you for completing the survey!</h2>
+      <p>Your feedback helps us improve.</p>
+      <button id="restart-btn" class="btn" type="button" aria-label="Restart">Return to main page</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <h2 class="footer-title">Connect With Us</h2>
+      <address class="contact">
+        <a href="tel:+19603592456" class="contact-link">+1 960 359 2456</a>
+        <a href="mailto:support-lc@reviewer.com" class="contact-link">support-lc@reviewer.com</a>
+      </address>
+      <p class="copyright">© <span id="year"></span> REVIEWER</p>
+    </div>
+  </footer>
+
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>
